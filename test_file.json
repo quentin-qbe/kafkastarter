@@ -1,0 +1,48 @@
+PRODUCT :
+{
+  "productId": "P001",
+  "sku": "KB001",
+  "name": "Keyboard",
+  "brand": "Microsoft",
+  "category": "Accessories",
+  "active": true,
+  "createdAt": "2026-08-26T09:00:00Z"
+}
+
+PRICE :
+{
+  "productId": "P001",
+  "amount": 49.99,
+  "currency": "EUR",
+  "updatedAt": "2026-08-26T09:01:00Z"
+}
+
+STOCK :
+{
+  "productId": "P001",
+  "availableQuantity": 120,
+  "reservedQuantity": 10,
+  "warehouseCode": "WH1",
+  "updatedAt": "2026-08-26T09:02:00Z"
+}
+
+SUPPLIER :
+{
+"productId": "P001",
+"supplierId": "SUP001",
+"supplierName": "TechSupplier",
+"country": "France",
+"updatedAt": "2026-08-26T09:03:00Z"
+}
+
+MARKETING :
+{
+"productId": "P001",
+"shortDescription": "Wireless Keyboard",
+"longDescription": "Ergonomic wireless keyboard",
+"tags": [
+"office",
+"wireless"
+],
+"updatedAt": "2026-08-26T09:04:00Z"
+}
