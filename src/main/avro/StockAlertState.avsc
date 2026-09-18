@@ -1,0 +1,43 @@
+{
+  "type": "record",
+  "name": "StockAlertState",
+  "namespace": "com.qbe.avro",
+  "fields": [
+    {
+      "name": "productId",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "alertActive",
+      "type": "boolean"
+    },
+    {
+      "name": "severity",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "lastKnownStock",
+      "type": [
+        "null",
+        "int"
+      ],
+      "default": null
+    },
+    {
+      "name": "lastAlertDate",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    }
+  ]
+}

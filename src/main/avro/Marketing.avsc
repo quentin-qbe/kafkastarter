@@ -1,0 +1,33 @@
+{
+  "type": "record",
+  "name": "Marketing",
+  "namespace": "com.qbe.avro",
+  "fields": [
+    {
+      "name": "productId",
+      "type": "string"
+    },
+    {
+      "name": "shortDescription",
+      "type": "string"
+    },
+    {
+      "name": "longDescription",
+      "type": "string"
+    },
+    {
+      "name": "tags",
+      "type": {
+        "type": "array",
+        "items": "string"
+      }
+    },
+    {
+      "name": "lastUpdatedAt",
+      "type": {
+        "type": "long",
+        "logicalType": "timestamp-millis"
+      }
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "type": "record",
+  "name": "Stock",
+  "namespace": "com.qbe.avro",
+  "fields": [
+    {
+      "name": "productId",
+      "type": "string"
+    },
+    {
+      "name": "availableQuantity",
+      "type": "int"
+    },
+    {
+      "name": "reservedQuantity",
+      "type": "int"
+    },
+    {
+      "name": "warehouseCode",
+      "type": "string"
+    },
+    {
+      "name": "lastUpdatedAt",
+      "type": {
+        "type": "long",
+        "logicalType": "timestamp-millis"
+      }
+    }
+  ]
+}

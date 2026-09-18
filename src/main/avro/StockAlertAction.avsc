@@ -1,0 +1,36 @@
+{
+  "type": "record",
+  "name": "StockAlertAction",
+  "namespace": "com.qbe.avro",
+  "fields": [
+     {
+      "name": "eventId",
+      "type": "string"
+     },
+    {
+      "name": "productId",
+      "type": "string"
+    },
+    {
+      "name": "action",
+      "type": {
+        "type": "enum",
+        "name": "AlertActionType",
+        "symbols": [
+          "ACKNOWLEDGE",
+          "UNACKNOWLEDGE",
+          "RESOLVE",
+          "REOPEN"
+        ]
+      }
+    },
+    {
+      "name": "user",
+      "type": "string"
+    },
+    {
+      "name": "processedAt",
+      "type": "string"
+    }
+  ]
+}

@@ -1,0 +1,115 @@
+{
+  "type": "record",
+  "namespace": "com.qbe.avro",
+  "name": "ProductMaster",
+  "fields": [
+    {
+      "name": "productId",
+      "type": "string"
+    },
+    {
+      "name": "sku",
+      "type": ["null", "string"],
+      "default": null
+    },
+    {
+      "name": "name",
+      "type": ["null", "string"],
+      "default": null
+    },
+    {
+      "name": "brand",
+      "type": ["null", "string"],
+      "default": null
+    },
+    {
+      "name": "category",
+      "type": ["null", "string"],
+      "default": null
+    },
+    {
+      "name": "active",
+      "type": "boolean"
+    },
+    {
+      "name": "price",
+      "type": ["null", "double"],
+      "default": null
+    },
+    {
+      "name": "currency",
+      "type": ["null", "string"],
+      "default": null
+    },
+    {
+      "name": "availableStock",
+      "type": ["null", "int"],
+      "default": null
+    },
+    {
+      "name": "reservedStock",
+      "type": ["null", "int"],
+      "default": null
+    },
+    {
+      "name": "supplierId",
+      "type": ["null", "string"],
+      "default": null
+    },
+    {
+      "name": "supplierName",
+      "type": ["null", "string"],
+      "default": null
+    },
+    {
+      "name": "supplierCountry",
+      "type": ["null", "string"],
+      "default": null
+    },
+    {
+      "name": "shortDescription",
+      "type": ["null", "string"],
+      "default": null
+    },
+    {
+      "name": "longDescription",
+      "type": ["null", "string"],
+      "default": null
+    },
+    {
+      "name": "tags",
+      "type": {
+        "type": "array",
+        "items": "string"
+      },
+      "default": []
+    },
+    {
+      "name": "alertThreshold",
+      "type": ["null", "int"],
+      "default": null
+    },
+    {
+      "name": "createdAt",
+      "type": [
+        "null",
+        {
+          "type": "long",
+          "logicalType": "timestamp-millis"
+        }
+      ],
+      "default": null
+    },
+    {
+      "name": "lastUpdatedAt",
+      "type": [
+        "null",
+        {
+          "type": "long",
+          "logicalType": "timestamp-millis"
+        }
+      ],
+      "default": null
+    }
+  ]
+}

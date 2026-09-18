@@ -1,0 +1,43 @@
+{
+  "type": "record",
+  "name": "Product",
+  "namespace": "com.qbe.avro",
+  "fields": [
+    {
+      "name": "productId",
+      "type": "string"
+    },
+    {
+      "name": "sku",
+      "type": "string"
+    },
+    {
+      "name": "name",
+      "type": "string"
+    },
+    {
+      "name": "category",
+      "type": "string"
+    },
+    {
+      "name": "brand",
+      "type": "string"
+    },
+    {
+      "name": "active",
+      "type": "boolean"
+    },
+    {
+      "name": "createdAt",
+      "type": {
+        "type": "long",
+        "logicalType": "timestamp-millis"
+      }
+    },
+    {
+      "name": "alertThreshold",
+      "type": ["null", "int"],
+      "default": null
+    }
+  ]
+}
